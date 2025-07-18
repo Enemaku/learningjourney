@@ -1,0 +1,93 @@
+.container{
+    display: flex;
+    color: white;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 50px;
+}
+.sedan{
+    flex: 1;
+    background-color: #e38826;
+    padding: 30px;
+
+}
+.suv{
+    flex: 1;
+    background-color: #006970;
+    padding: 30px;
+}
+.luxury{
+    flex: 1;
+    background-color: #004241;
+    padding: 30px;
+}
+.luxury-button {
+    background-color: white;
+    color: #004241;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 30px;
+    display: inline-block;
+}
+.sedan-button {
+    background-color: white;
+    color: #e38826;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 30px;
+    display: inline-block;
+}
+.suv-button {
+    background-color: white;
+    color: #006970;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 30px;
+    display: inline-block;
+}
+.luxury-button:hover{
+    background-color: transparent;
+    color:white;
+    border: 2px solid white;
+}
+.sedan-button:hover{
+    background-color: transparent;
+    color:white;
+    border: 2px solid white;
+
+}
+.suv-button:hover{
+    background-color: transparent;
+    color:white;
+    border: 2px solid white;
+
+}
+.circle{
+    margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .sedan, .suv, .luxury {
+        flex: none;
+        width: 100%;
+    }
+}
+h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}

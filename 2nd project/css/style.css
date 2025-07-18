@@ -1,0 +1,30 @@
+body {background-color:rgb(199, 199, 2);
+    align-items: center;
+}
+h3 {background-color: rgba(255, 255, 0, 0.703);
+padding: 2px 2px;
+display: inline-block;
+border-radius: 6px;
+width: 20%;
+}
+.card{
+    background: rgb(197, 196, 196);
+    padding: 40px 32px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the card */
+    border: 1px solid #ccc; /* Optional border for better visibility */
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  float: left; /* or right, depending on your design */
+  margin-right: 8px; /* space between image and name */
+}
+.circle {
+  border-radius: 10px;
+}
