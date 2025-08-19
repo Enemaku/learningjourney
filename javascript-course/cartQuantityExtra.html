@@ -13,7 +13,7 @@
     </button>
 
     <button onclick="
-      if (cartQuantity + 1 > 10) {
+      if (cartQuantity + 1 > MAX_CART_QUANTITY) {
         alert('The cart is full');
       } else {
         cartQuantity++;
@@ -46,7 +46,7 @@
     </button>
 
     <button onclick="
-      if (cartQuantity + 2 > 10) {
+      if (cartQuantity + 2 > MAX_CART_QUANTITY) {
         alert('The cart is full');
       } else {
         cartQuantity += 2;
@@ -57,7 +57,7 @@
     </button>
 
     <button onclick="
-      if (cartQuantity + 3 > 10) {
+      if (cartQuantity + 3 > MAX_CART_QUANTITY) {
         alert('The cart is full');
       } else {
         cartQuantity += 3;
@@ -68,7 +68,7 @@
     </button>
 
     <button onclick="
-      if (cartQuantity + 4 > 10) {
+      if (cartQuantity + 4 > MAX_CART_QUANTITY) {
         alert('The cart is full');
       } else {
         cartQuantity += 4;
@@ -79,7 +79,7 @@
     </button>
 
     <button onclick="
-      if (cartQuantity + 5 > 10) {
+      if (cartQuantity + 5 > MAX_CART_QUANTITY) {
         alert('The cart is full');
       } else {
         cartQuantity += 5;
@@ -98,6 +98,7 @@
     </button>
 
     <script>
+      const MAX_CART_QUANTITY = 10;
       let cartQuantity = 0;
     </script>
   </body>

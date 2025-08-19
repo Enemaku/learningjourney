@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="/javascript-course/contact-form.css">
+  <link rel="icon" href="/javascript-course/favicon-32x32.png" type="image/x-icon" width="32" height="32">
+</head>
+
+<body>
+  <div id="popupContainer" class="popupContainer">
+    <div id="popup" class="popup">
+      <h2>
+        Success!
+      </h2>
+      <p>
+        your response has been recorded. 
+      </p>
+      <button id="closePopup" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form action="#" id="contactForm">
+      <div class="input-container">
+        <div>
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="firstName" required>
+          <!-- <p class="error-message">First name is compulsory</p> -->
+        </div>
+        <div>
+          <label for="lastName">Last Name *</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+      </div>
+      <label for="email">Email address *</label>
+      <input type="email" name="email" id="email" required>
+      <label for="query">Query type *</label>
+      <div class="query">
+        <div class="supportRequest">
+          <input type="radio" id="supportRequest" name="query" value="support" required>
+          <label for="supportRequest">Support Request</label>
+        </div>
+        <div class="generalEnquiry">
+          <input type="radio" id="generalEnquiry" name="query" value="general" required>
+          <label for="generalEnquiry">General Enquiry</label>
+        </div>
+      </div>
+      <h3>Message *</h3>
+      <textarea name="message" rows="5" required></textarea>
+      <br>
+      <div class="checkbox">
+        <input type="checkbox" name="option1" value="value1" id="checkbox1" required>
+       <label for="checkbox1">I consent to being contacted by the team *</label>
+      </div><br>
+      <button type="submit" onclick="successPopup()">Submit</button>
+    </form>
+  </div>
+</body>
+<script src="contact-form.js"></script>
+</html>
