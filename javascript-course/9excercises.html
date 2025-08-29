@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>9 Excercises</title>
+</head>
+<body>
+  <h1>9 Excercises</h1>
+  <button>9a</button>
+  <button class="js-9b-button">9b</button>
+   <button class="heads" onclick="choice();">heads</button>
+    <button class="tails" onclick="choice();">tails</button>
+    <p class="result"></p>
+</body>
+<script>
+  // console.log(document.querySelector("button"));
+  // document.querySelector(".js-9b-button");
+  // const js9bButton = document.querySelector(".js-9b-button");
+  // js9bButton.innerText = "9b done" ;
+  let result = document.querySelector(".result");
+  function choice() {
+    // const heads = document.querySelector(".heads");
+    // const tails = document.querySelector(".tails");
+  // const result = document.querySelector(".result");
+  if (document.querySelector(".heads").clicked == true) {
+    result.innerText = "you chose: heads";
+  } else {
+    result.innerText = "you chose: tails";
+  }
+}
+</script>
+</html>
