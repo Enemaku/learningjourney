@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>React Basics</title>
+</head>
+
+<body>
+  <div class="js-container"></div>
+  <script src="https://unpkg.com/supersimpledev@3.2.1/external-library.js"></script>
+
+  <script src="https://unpkg.com/supersimpledev/react.js"></script>
+  <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+  <script src="https://unpkg.com/supersimpledev/dayjs.js"></script>
+
+  <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+  <script type="text/babel">
+ 
+    // const button = <button>Good Job!</button>;
+    // const paragraph = <p>paragraph of text</p>;
+
+    // const div = (
+    //   <div>
+    //     <button>Good Job!</button>
+    //     <p>my name is Emmanuel</p>
+    //   </div>
+    // );
+    //  const price = (
+    //   <div>
+    //     <p>Cotton socks</p>
+    //     <p>Price: $10</p>
+    //     <button>Add to Cart</button>
+    //   </div>
+    //  )
+    
+    const container = document.querySelector('.js-container');
+      
+  setInterval(() => {
+    const time = <p>current time: {dayjs().format('HH:mm:ss')}</p>;
+  const root = ReactDOM.createRoot(container); 
+    root.render(time);
+  }, 1000);
+    
+
+   
+
+    // const productCost = 10 + 8 * 2;
+    // const shippingCost = 5;
+
+    // const product = (
+    //   <div>
+    //     <p>Product Cost: ${productCost}</p>
+    //     <p>Shipping Cost: ${shippingCost}</p>
+    //     <p>Total cost: ${(productCost + shippingCost)}</p>
+    //     <button>place your order</button>
+    //     </div>
+    // );
+    // ReactDOM.createRoot(container).render(product);
+    // ReactDOM.createRoot(container).render(div);
+    // ReactDOM.createRoot(container).render(price);
+    // const productCost = 10 + 8 * 2;
+    // productCost);
+    // const paragraph = <p>Product cost: ${productCost}</p>;
+    // ReactDOM.createRoot(container).render(paragraph);
+  </script>
+  
+</body>
+
+</html>
