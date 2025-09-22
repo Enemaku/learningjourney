@@ -17,7 +17,7 @@ export default function Recipes() {
       const apiRecipes = (data.results || []).map((recipe) => ({
         id: recipe.id,
         title: recipe.title,
-        image: recipe.image,
+        image: "/img/gallery/img_4.jpg",
         authorImg: "/img/top-chiefs/img_1.jpg",
         description: recipe.summary 
   ? recipe.summary.replace(/<[^>]*>?/gm, '').slice(0, 120) + "..." 

@@ -13,7 +13,7 @@ import RecipeDetails from "./pages/RecipeDetails";
 import Settings from "./pages/Settings";
 
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Navbar />
@@ -29,7 +29,5 @@ function App() {
     </Router>
   )
 }
-
-export default App;
 
 

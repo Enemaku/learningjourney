@@ -24,27 +24,26 @@ export default function RecipeDetails() {
     fetchRecipe();
   }, [id]);
 
-  if (loading) return <p className="p-4">Loading recipe...</p>;
-  if (!recipe) return <p className="p-4">Recipe not found.</p>;
+  if (!recipe) return <p>loading...</p>
 
   return (
-    <div className="p-4 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">{recipe.title}</h1>
+    <div className="details-container">
+      <h1 className="title">{recipe.title}</h1>
       <img
         src={recipe.image}
         alt={recipe.title}
-        className="rounded-lg mb-4 w-full max-h-[400px] object-cover"
+        className="recipe-image"
       />
 
-      <h2 className="text-xl font-semibold mb-2">Ingredients</h2>
-      <ul className="list-disc pl-6 mb-6">
-        {recipe.extendedIngredients?.map((ing) => (
-          <li key={ing.id}>{ing.original}</li>
+      <h2 className="ingredient-text">Ingredients</h2>
+      <ul className="ingredient-list">
+        {recipe.extendedIngredients?.map((ingredients) => (
+          <li key={ingredients.id}>{ingredients.original}</li>
         ))}
       </ul>
 
-      <h2 className="text-xl font-semibold mb-2">Instructions</h2>
-      <p className="leading-relaxed">
+      <h2 className="instruction-text">Instructions</h2>
+      <p className="recipe-instructions">
         {recipe.instructions
           ? recipe.instructions.replace(/<\/?[^>]+(>|$)/g, "") // strip HTML
           : "No instructions available."}
